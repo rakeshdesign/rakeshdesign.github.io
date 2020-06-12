@@ -1,0 +1,56 @@
+
+.about_box{
+    display: flex;
+    justify-content: space-between;
+    .white_box{ max-width: calc(100% - 170px);}
+}
+.white_box{
+    box-shadow: 0px 5px 20px 0px rgba(69,67,96,.1);
+    transition: all .3s ease-in-out;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.user_icon{
+     width: 130px; height: 130px; border-radius: 50%; border: 5px solid #fff;
+     box-shadow: 0px 5px 20px 0px rgba(69,67,96,.1);
+     overflow: hidden;
+}
+
+.skill-item{ margin-bottom: 20px;}
+.skill-info{
+    display: flex; justify-content: space-between;
+    h4{ font-size: 16px; font-weight: 500; margin-top: 0; margin-bottom: 15px;}
+    span{ font-size: 14px;}
+}
+.progress {
+    height: 7px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: none;
+}
+.progress-bar {
+    border-radius: 15px;
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 7px;
+    color: #fff;
+    text-align: center;
+    box-shadow: none;
+    transition: width .6s ease;
+}
+
+.counter_section{ margin-top: 100px;}
+.details{
+    position: relative;
+    padding-left: 50px;
+    h3{ margin: 0; font-size: 30px; color: #454360; font-weight: 700;}
+    p{margin-bottom: 0;}
+    i{ font-size: 35px; position: absolute; left: 0; top: 0; font-weight: normal;color: #dedeea;}
+}
