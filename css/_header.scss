@@ -1,7 +1,7 @@
 
 .navbar {
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: #FFF;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -11,10 +11,10 @@
     font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+    color: #000 !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
+    color: #000 !important;
     background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -22,12 +22,5 @@
     color: #fff !important;
   }
 
+  .nav>li>a{ padding: 15px 10px;}
 
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }

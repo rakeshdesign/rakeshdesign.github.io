@@ -1,4 +1,14 @@
 
+/*
+Author Name : Rakesh Mistry.
+Email : rakesh.mi1986@gmail.com.
+Technology : HTML5, CSS3, jQuery3.1.
+project name : Portfolio Website.
+Max-resolution: 1600px
+Min-resolution: 320px;
+*/
+
+
 @import "header";
 @import "about";
 
@@ -7,28 +17,21 @@ body{
     background-color: #f9f9ff;
     margin: 0; padding: 0;
     line-height: 1.7;
-}
-ul,li{margin: 0; padding: 0;}
-img{ max-width: 100%;}
-p{
-  color: #5e5c7f;
-    font-family: "Rubik",Sans-serif;
+    font-family: "Rubik",sans-serif;
     font-size: 16px;
 }
-
-.bg_orange {
-    background-color: #f4511e !important;
-    color: #fff;
-}  
+ul,li{margin: 0; padding: 0; list-style: none;}
+img{ max-width: 100%;}
+p{ color: #5e5c7f; font-family: "Rubik",Sans-serif; font-size: 16px;}
 
 .color_1{ background-color: #ffd15c;}
 .color_2{ background-color: #ff4c60;}
-.color_3{ background-color: #6c6ce5;}
+.color_3{background-color: #2ad554;}
+.color_4{ background-color: #6c6ce5;}
+.color_5{ background-color: #cb0ff0;}
 
 .btn{
-  border-radius: 60px;
-    font-family: "Rubik",sans-serif;
-    font-size: 16px;
+    border-radius: 60px;
     font-weight: 700;
     overflow: hidden;
     line-height: 1;
@@ -37,19 +40,34 @@ p{
 }
 .btn-default{
     color: #fff;
-    background: #ff4c60;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: double 2px transparent;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    transition: all 0.3s ease-in-out;
     display: inline-block;
     vertical-align: middle;
     position: relative;
     &:hover{
-      color: #fff;
-      background: #ff4c60;
+      background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+      border: 2px solid #854fee;
+      color: #222222;
+      box-shadow: none;
     }
 
 }
 
-section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px;
-    &:nth-child(even){ background-color: #ddd;}
+section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: relative;
+  &::after,&::before{
+    content: ""; display: table; position: absolute;
+    width: 7%;
+    height: 250px; right: 0; top: 0; opacity: 0.1;
+    background-image: url(../images/dots_pattern.svg);
+    background-position: 0% 0%;
+  }
+  &::after{
+    right: auto; left: 0; bottom: 0; top: auto;
+  }
+
 }
 
 .section-title {
@@ -70,7 +88,7 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px;
 }
 
 .form-control{
-  display: block;
+    display: block;
     border-radius: 30px;
     width: 100%;
     height: 60px;
@@ -86,10 +104,130 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px;
 }
 .form-group{ margin-bottom: 30px;}
 
-.footer {
-  background: #f9f9ff;
-  padding: 40px 0;
-  text-align: center;
-  border-top: solid 1px #ececf2;
+.detail_box{ display: flex; align-items: center; height: calc(100vh - 150px);}
+.my_detail{ width: 80%;}
+.shape_1 { position: absolute; left: -20px;top: -55px; width: 70%;}
+
+.hero-img-block{ position: absolute; display: flex; flex-direction: row; justify-content: flex-end;
+  width: 70%;
+    top: 52%;
+    transform: translate(-50px, -50%);
+}
+.hero-img { 
+  position: relative;z-index: 1;max-height: 640px;
+  border: 5px solid #fff;
+  box-shadow: 15px 15px 15px #3641c6;
+}
+.hero-img-backdrop {
+  position: absolute;left: -80px;top: 80px;right: 80px;bottom: -80px;z-index: 0;
+  display: block;
+  background-image: url(../images/dots_pattern.svg);
+  background-position: 0% 0%;
+  background-size: 20px;
+  opacity: 0.3;
 }
 
+.blue-shape-hero {
+  position: absolute;top: 0px; right: 0px; bottom: 0px;
+  display: block;
+  width: 33.3334%;
+  background-image: linear-gradient(to right, #aa7eff 0%, #2844f8 100%);
+  transform-origin: 100% 50%;
+}
+
+/* Experience Part Start */
+.timeline{ position: relative;
+  li{
+      padding-left: 50px;
+      margin-bottom: 20px;
+      position: relative;
+      background-color: inherit;
+      width: 100%;
+      .time { color: #8b88b1; font-size: 14px;}
+      h3{font-size: 18px;margin: 5px 0;
+        span{
+          color: #5e5c7f;
+          font-family: "Rubik",Sans-serif;
+          font-size: 16px; font-weight: normal; margin-left: 10px;
+        }
+      }
+      p{margin: 0;}
+      i{
+          position: absolute;
+          font-size: 25px;
+          color: #854fee;
+          background: #fff;
+          left: -8px;
+          top: 0;
+          padding: 6px 0 2px;
+          z-index: 2;
+      }
+  }
+  &::after{
+      content: "";
+      position: absolute; top: 30px; bottom: 30px; left: 4px;
+      width: 1px; height: 100%;
+      background-color: #4458dc;
+  }
+}
+
+.certificate_box{
+  ul{ display: flex; flex-wrap: wrap;}
+  li{ align-self: flex-start; padding: 10px; margin: 0 1% 15px; width: 48%; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(69,67,96,.1);
+    transition: all 0.2s ease-in-out;
+    &:nth-child(even){
+      margin-top: 20px; margin-bottom: 0;
+    }
+    &:hover{
+      box-shadow: 0px 5px 20px 0px rgba(69,67,96,.1);
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Experience Part End */
+
+/* Portfolio Part */
+.portfolio-filter {
+  margin-bottom: 25px;
+  li {
+    color: #5e5c7f;
+    cursor: pointer;
+    font-family: "Rubik",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    transition: all .3s ease-in-out;
+    &:hover,&.active{
+      color: #854fee;
+    }
+  }
+
+}
+
+.filter .white_box{ padding: 10px; border-radius: 10px; margin-bottom: 20px;}
+
+
+/* Footer Part Start */
+#contact{ padding-bottom: 0;}
+.footer {background: #f9f9ff;padding: 40px 0;text-align: center;border-top: solid 1px #ececf2;}
+/* Footer Part End */
+
+
+@media screen and (max-width: 767px) {
+  h1{ margin-top: 0;}
+  section{ padding-top: 70px;}
+  .section-title{ margin-bottom:30px;}
+  .blue-shape-hero{position: relative;transform: none; margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .hero-img-block{ position: relative; transform: none; width: 100%; top: -15px;}
+  .my_detail{ width: 100%; text-align: center;}
+  .detail_box{ height: auto;}
+}
