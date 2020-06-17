@@ -665,9 +665,9 @@ section::after {
     position: relative;
     -webkit-transform: none;
             transform: none;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    margin: 30px auto;
+    width: 160px;
+    height: 160px;
     overflow: hidden;
     border-radius: 50%;
   }
