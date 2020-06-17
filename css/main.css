@@ -58,6 +58,12 @@ Min-resolution: 320px;
   padding: 15px 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar li a {
+    padding: 12px 20px !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navbar ul.navbar-nav {
     display: block;
@@ -180,7 +186,23 @@ Min-resolution: 320px;
 }
 
 .counter_section {
-  margin-top: 100px;
+  margin-top: 70px;
+}
+
+.counter_section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.counter_section li {
+  width: 23%;
+  margin: 1%;
 }
 
 .details {
@@ -205,7 +227,7 @@ Min-resolution: 320px;
   left: 0;
   top: 0;
   font-weight: normal;
-  color: #dedeea;
+  color: #d1beff;
 }
 
 .service_thum {
@@ -272,7 +294,8 @@ Min-resolution: 320px;
 @media screen and (max-width: 767px) {
   .user_icon {
     margin: 0 auto 30px;
-    width: 150px;
+    width: 80%;
+    max-width: 400px;
   }
   .user_icon::after {
     -webkit-transform: translate(15px, 15px);
@@ -295,6 +318,13 @@ Min-resolution: 320px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .counter_section li {
+    width: 80%;
+    margin: 0 auto 20px;
+    border: 1px solid #d1beff;
+    padding: 15px;
+    border-radius: 10px;
   }
 }
 
@@ -658,6 +688,16 @@ section::after {
   section {
     padding-top: 70px;
   }
+  section#home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .section-title {
     margin-bottom: 30px;
   }
@@ -666,10 +706,9 @@ section::after {
     -webkit-transform: none;
             transform: none;
     margin: 30px auto;
-    width: 160px;
-    height: 160px;
-    overflow: hidden;
-    border-radius: 50%;
+    width: 70%;
+    max-width: 200px;
+    height: auto;
   }
   .hero-img-block {
     position: relative;
@@ -679,7 +718,12 @@ section::after {
     top: 0;
   }
   .hero-img {
-    border: none;
+    -webkit-box-shadow: 5px 5px 10px #c4c8ff;
+            box-shadow: 5px 5px 10px #c4c8ff;
+  }
+  .hero-img-backdrop {
+    left: -30px;
+    bottom: -50px;
   }
   .my_detail {
     width: 100%;
@@ -687,6 +731,9 @@ section::after {
   }
   .detail_box {
     height: auto;
+  }
+  .portfolio-filter li {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
