@@ -40,13 +40,15 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#home">HOME</a></li>
+        <li class="active"><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#experience">EXPERIENCE</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <li class="active_bg"></li>
       </ul>
+      
     </div>
   </div>
 </nav>
@@ -274,13 +276,8 @@ brought the projects to the core efficacy  and with adherence to the deadlines. 
     </h2>
     <div class="row">
       <div class="col-sm-6">
-        <div class="certificate_box">
-          <ul>
-            <li><img src="images/responsive_design.png" alt=""></li>
-            <li><img src="images/responsive_design.png" alt=""></li>
-            <li><img src="images/responsive_design.png" alt=""></li>
-            <li><img src="images/responsive_design.png" alt=""></li>
-          </ul>
+        <div class="white_box">
+          <img src="images/work_thum.png" alt="">
         </div>
       </div>
       <div class="col-sm-6">
@@ -387,9 +384,9 @@ brought the projects to the core efficacy  and with adherence to the deadlines. 
     <div class="row">
       <div class="col-sm-5">
         <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Baroda, Gujarat</p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i> +91 9662510860</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> rockdesign1986@gmail.com</p>
       </div>
       <div class="col-sm-7">
         <div class="row">
@@ -416,6 +413,7 @@ brought the projects to the core efficacy  and with adherence to the deadlines. 
     <div class="container"> <span class="copyright"> © 2020 Rakesh Mistry. </span></div>
   </footer>
 </section>
+
 
 
 <script>
@@ -446,9 +444,9 @@ $(document).ready(function(){
     });
     
     if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+      $(this).removeClass("active");
+    }
+    $(this).addClass("active");
 
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
