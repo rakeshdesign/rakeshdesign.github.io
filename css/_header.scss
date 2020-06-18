@@ -78,10 +78,12 @@
 }
 
 @media screen and (max-width: 767px) {
+  .active_bg{ display: none !important;}
   .navbar ul.navbar-nav{display: block; margin: 0;}
+  .navbar-nav>li{ width: 100%;}
   .navbar-nav>li>a {
     color: #777;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; text-align: left;
     border-radius: 0; padding: 15px !important;
 }
   .navbar-nav li a:hover, .navbar-nav li.active a{
