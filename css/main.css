@@ -373,7 +373,8 @@ Min-resolution: 320px;
     text-align: center;
   }
   .about_box .white_box .btn {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
   }
   .about_box .white_box::before {
     border-left: 10px solid transparent;
@@ -967,7 +968,7 @@ section::after {
             transform: none;
     margin: 50px auto;
     width: 50%;
-    max-width: 200px;
+    max-width: 180px;
     height: auto;
   }
   .hero-img-block {
@@ -1004,6 +1005,13 @@ section::after {
   }
   #experience img {
     max-width: 100%;
+  }
+  .timeline li {
+    padding-left: 35px;
+  }
+  #contact button {
+    display: block;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
