@@ -966,7 +966,7 @@ section::after {
     position: relative;
     -webkit-transform: none;
             transform: none;
-    margin: 50px auto;
+    margin: 50px auto 40px;
     width: 50%;
     max-width: 170px;
     height: auto;
@@ -984,7 +984,7 @@ section::after {
   }
   .hero-img-backdrop {
     left: -30px;
-    bottom: -50px;
+    bottom: -45px;
   }
   .my_detail {
     width: 100%;
