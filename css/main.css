@@ -374,6 +374,9 @@ Min-resolution: 320px;
   #services .row {
     display: block;
   }
+  #services .service_thum {
+    padding: 30px 20px;
+  }
   .user_icon {
     margin: 0 auto 30px;
     width: 60%;
