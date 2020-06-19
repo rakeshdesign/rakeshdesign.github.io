@@ -393,6 +393,10 @@ Min-resolution: 320px;
   }
 }
 
+.animate-gif {
+  width: 100%;
+}
+
 .animate-gif img {
   z-index: 9;
 }
@@ -570,6 +574,21 @@ Min-resolution: 320px;
   100% {
     -webkit-transform: translate(-50px);
     transform: translate(-50px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hom-ract2 {
+    top: 44%;
+    left: 5%;
+    bottom: auto;
+    right: auto;
+  }
+  .hom-suar2 {
+    right: 0;
+  }
+  .hom-round1, .hom-sib2, .hom-ract1, .hom-suar1 {
+    display: none;
   }
 }
 

@@ -1,4 +1,5 @@
     .animate-gif{ 
+        width: 100%;
         img{ z-index: 9;}
     }
 	.hom-suar1,.hom-suar2 {
@@ -154,3 +155,8 @@
 	}
 
 
+    @media screen and (max-width: 767px) {
+        .hom-ract2 { top: 44%; left: 5%; bottom: auto; right: auto;}
+        .hom-suar2{right: 0;}
+        .hom-round1,.hom-sib2,.hom-ract1,.hom-suar1{ display: none;}
+    }
