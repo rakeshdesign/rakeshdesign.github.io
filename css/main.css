@@ -32,6 +32,8 @@ Min-resolution: 320px;
 
 .navbar li {
   width: 16.66%;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 
 .navbar li a {
@@ -790,6 +792,7 @@ section::after {
   }
   #experience .white_box {
     display: block;
+    margin-bottom: 20px;
   }
   #experience img {
     max-width: 100%;
