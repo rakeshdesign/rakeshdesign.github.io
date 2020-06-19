@@ -130,6 +130,10 @@
 
 
 @media screen and (max-width: 767px) {
+    #services{
+        .row{ display: block; }
+        
+    }
     .user_icon{ margin: 0 auto 30px; width:60%; max-width: 400px;
         &::after{
             transform: translate(15px, 15px);

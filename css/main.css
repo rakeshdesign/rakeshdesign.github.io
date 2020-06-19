@@ -371,6 +371,9 @@ Min-resolution: 320px;
 }
 
 @media screen and (max-width: 767px) {
+  #services .row {
+    display: block;
+  }
   .user_icon {
     margin: 0 auto 30px;
     width: 60%;
