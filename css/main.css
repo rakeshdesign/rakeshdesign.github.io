@@ -968,7 +968,7 @@ section::after {
             transform: none;
     margin: 50px auto;
     width: 50%;
-    max-width: 180px;
+    max-width: 170px;
     height: auto;
   }
   .hero-img-block {
@@ -1007,7 +1007,10 @@ section::after {
     max-width: 100%;
   }
   .timeline li {
-    padding-left: 35px;
+    padding-left: 30px;
+  }
+  .timeline li i {
+    font-size: 22px;
   }
   #contact button {
     display: block;

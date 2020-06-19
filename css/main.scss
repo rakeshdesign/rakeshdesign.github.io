@@ -219,7 +219,7 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
 
   .blue-shape-hero{
     position: relative;transform: none; margin: 50px auto;
-    width: 50%; max-width: 180px; height: auto;
+    width: 50%; max-width: 170px; height: auto;
   }
   .hero-img-block{ position: relative; transform: none; width: 100%; top: 0;}
   .hero-img{ box-shadow: 5px 5px 10px #c4c8ff;}
@@ -235,7 +235,9 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
     img{ max-width: 100%;}
   }
 
-  .timeline li{padding-left: 35px;}
+  .timeline li{padding-left: 30px;
+    i{font-size: 22px;}
+  }
   #contact{ 
     button{ display: block; margin: 0 auto;}
   }
