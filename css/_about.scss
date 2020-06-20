@@ -1,9 +1,7 @@
 
 
 .about_box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex;justify-content: space-between;flex-wrap: wrap;
     .white_box{ max-width: calc(100% - 300px);
         &::before{
             content: "";
@@ -18,28 +16,13 @@
         }
     }
 }
-.white_box{ position: relative;
-    box-shadow: 0px 5px 20px 0px rgba(69,67,96,.1);
-    transition: all .3s ease-in-out;
-    padding: 20px 30px;
-    background-color: #fff;
-    border-radius: 20px;
-    width: 100%;
-}
+
 
 .user_icon{ position: relative;
      width: 250px; height: auto; align-self: flex-start; 
-
      img{
         filter: drop-shadow(5px 5px 0 #6c6ce5) ;
      }
-
-    //  &::after{
-    //      content: "";
-    //      position: absolute; left: 0; top: 0;
-    //      width: 100%; height: 100%; border: 5px solid #aa7eff;
-    //      transform: translate(20px,20px);
-    //  }
 }
 
 .skill-item{ margin-bottom: 20px;}
@@ -96,44 +79,22 @@
     p{ margin-bottom: 0;}
 }
 
-#services{
-    .row{ display: flex; }
-    .service_thum{ height: 100%;}
-  }
 
 .features-icon{
-    position: relative; margin-top: 15px;
+    position: relative; margin: 15px auto 20px;
     display: flex;
     width: 140px;
     height: 120px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
-    padding-bottom: 12px;
     justify-content: center; align-items: center;
-    //background-image: url("../images/service_shape.png");
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #2844f8 0%, #aa7eff 100%), radial-gradient(circle at top left, #2844f8, #aa7eff );
+        border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     img{ width: 55px;z-index: 2;}
     h4{ font-weight: bold;}
-    &::after{
-        content: "";
-        display: block;
-        position: absolute; left: 0;
-        width: 140px;
-        height: 120px; 
-        background-image: linear-gradient(to right, #2844f8 0%, #aa7eff 100%), radial-gradient(circle at top left, #2844f8, #aa7eff );
-        border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-    }
 }
 
 
 @media screen and (max-width: 767px) {
-    #services{
-        .row{ display: block; }
-        .service_thum{ padding: 30px 20px;}
-    }
+    
     .user_icon{ margin: 0 auto 30px; width:60%; max-width: 400px;
         &::after{
             transform: translate(15px, 15px);

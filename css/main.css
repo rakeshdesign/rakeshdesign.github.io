@@ -42,10 +42,11 @@ Min-resolution: 320px;
   font-weight: 700;
   overflow: hidden;
   line-height: 1;
-  padding: 12px 32px !important;
+  padding: 12px 15px !important;
+  text-align: center;
 }
 
-.navbar-nav li.active a {
+.navbar li.active a {
   color: #fff !important;
   background: none !important;
 }
@@ -53,13 +54,6 @@ Min-resolution: 320px;
 .navbar-default .navbar-toggle {
   border-color: transparent;
   color: #fff !important;
-}
-
-.nav > li > a {
-  padding: 15px 10px;
-  text-align: center;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .active_bg {
@@ -174,18 +168,6 @@ Min-resolution: 320px;
   position: absolute;
   left: -15px;
   top: 20%;
-}
-
-.white_box {
-  position: relative;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  padding: 20px 30px;
-  background-color: #fff;
-  border-radius: 20px;
-  width: 100%;
 }
 
 .user_icon {
@@ -316,37 +298,23 @@ Min-resolution: 320px;
   margin-bottom: 0;
 }
 
-#services .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#services .service_thum {
-  height: 100%;
-}
-
 .features-icon {
   position: relative;
-  margin-top: 15px;
+  margin: 15px auto 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 140px;
   height: 120px;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-left: auto;
-  padding-bottom: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2844f8), to(#aa7eff)), radial-gradient(circle at top left, #2844f8, #aa7eff);
+  background-image: linear-gradient(to right, #2844f8 0%, #aa7eff 100%), radial-gradient(circle at top left, #2844f8, #aa7eff);
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
 .features-icon img {
@@ -358,25 +326,7 @@ Min-resolution: 320px;
   font-weight: bold;
 }
 
-.features-icon::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 140px;
-  height: 120px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2844f8), to(#aa7eff)), radial-gradient(circle at top left, #2844f8, #aa7eff);
-  background-image: linear-gradient(to right, #2844f8 0%, #aa7eff 100%), radial-gradient(circle at top left, #2844f8, #aa7eff);
-  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-}
-
 @media screen and (max-width: 767px) {
-  #services .row {
-    display: block;
-  }
-  #services .service_thum {
-    padding: 30px 20px;
-  }
   .user_icon {
     margin: 0 auto 30px;
     width: 60%;
@@ -613,6 +563,7 @@ Min-resolution: 320px;
   }
 }
 
+/* Custom Class Start */
 body {
   background-color: #f9f9ff;
   margin: 0;
@@ -637,6 +588,10 @@ p {
   color: #5e5c7f;
   font-family: "Rubik",Sans-serif;
   font-size: 16px;
+}
+
+a {
+  color: #5e5c7f;
 }
 
 .color_1 {
@@ -686,9 +641,13 @@ p {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)), radial-gradient(circle at top left, #4458dc, #854fee);
   background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
   border: 2px solid #854fee;
-  color: #222222;
+  color: #222222 !important;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.btn-default:active, .btn-default:focus {
+  color: #fff;
 }
 
 section {
@@ -718,6 +677,33 @@ section::after {
   top: auto;
 }
 
+section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .white_box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .service_thum {
+  height: 100%;
+}
+
 .section-title {
   font-size: 36px;
   margin: 0;
@@ -735,6 +721,18 @@ section::after {
   top: -14px;
   position: absolute;
   width: 37px;
+}
+
+.white_box {
+  position: relative;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
 }
 
 .form-control {
@@ -758,6 +756,8 @@ section::after {
   margin-bottom: 30px;
 }
 
+/* Custom Class End */
+/* Home Section Start */
 .detail_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -833,26 +833,8 @@ section::after {
           transform-origin: 100% 50%;
 }
 
+/* Home Section End */
 /* Experience Part Start */
-#experience .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#experience .white_box {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 #experience img {
   max-width: 400px;
 }
@@ -938,6 +920,8 @@ section::after {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
+  display: block;
+  height: auto;
 }
 
 /* Footer Part Start */
@@ -979,6 +963,16 @@ section::after {
         -ms-flex-align: center;
             align-items: center;
   }
+  section .row {
+    display: block;
+  }
+  section .white_box {
+    display: block;
+    margin-bottom: 20px;
+  }
+  section .service_thum {
+    padding: 30px 20px;
+  }
   .section-title {
     margin-bottom: 30px;
   }
@@ -1015,13 +1009,6 @@ section::after {
   }
   .portfolio-filter li {
     font-size: 15px;
-  }
-  #experience .row {
-    display: block;
-  }
-  #experience .white_box {
-    display: block;
-    margin-bottom: 20px;
   }
   #experience img {
     max-width: 100%;

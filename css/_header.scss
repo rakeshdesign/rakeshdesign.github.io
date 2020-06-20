@@ -15,27 +15,29 @@
     float: none; margin: 10px auto;
   }
 }
-.navbar li{ width: 16.66%;transition: all 0.5s ease-in-out;}
-.navbar li a {
-  color: #000 ;
-  border-radius: 60px;
-  font-weight: 700;
-  overflow: hidden;
-  line-height: 1;
-  padding: 12px 32px !important;
+.navbar li{
+   width: 16.66%;transition: all 0.5s ease-in-out;
+   a {
+    color: #000 ;
+    border-radius: 60px;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 1;
+    padding: 12px 15px !important; text-align: center;
+  }
+
+  &.active a {color: #fff !important; background: none !important; }
+
 }
-.navbar-nav li.active a {color: #fff !important; background: none !important; }
+
 
 .navbar-default .navbar-toggle { border-color: transparent; color: #fff !important;}
-
-.nav>li>a{ padding: 15px 10px; text-align: center; transition: all 0.5s ease-in-out;}
 
 .active_bg{
   position: absolute !important; left: 0; top: 0px; z-index: 1;
   width: 16.66%; height: 35px; border-radius: 60px;
   background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
   box-shadow: 0px 5px 10px rgba(118, 85, 225, 0.2);
-  // transition: all 0.3s ease-in-out;
 
 }
 #myNavbar{ position: relative;
@@ -74,12 +76,13 @@
 @media screen and (max-width: 767px) {
   .active_bg{ display: none !important;}
   .navbar ul.navbar-nav{display: block; margin: 0;}
-  .navbar-nav>li{ width: 100%;}
-  .navbar-nav>li>a {
-    color: #777;
-    border-bottom: 1px solid #ddd; text-align: left;
-    border-radius: 0; padding: 15px !important;
-}
+  .navbar-nav>li{ width: 100%;
+    &>a {
+      color: #777;
+      border-bottom: 1px solid #ddd; text-align: left;
+      border-radius: 0; padding: 15px !important;
+    }
+  }
   .navbar-nav li a:hover, .navbar-nav li.active a{
     color: #777 !important;
     background-image:none !important;

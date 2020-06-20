@@ -13,7 +13,7 @@ Min-resolution: 320px;
 @import "about";
 @import "animation";
 
-
+/* Custom Class Start */
 body{
     background-color: #f9f9ff;
     margin: 0; padding: 0;
@@ -25,6 +25,7 @@ body{
 ul,li{margin: 0; padding: 0; list-style: none;}
 img{ max-width: 100%;}
 p{ color: #5e5c7f; font-family: "Rubik",Sans-serif; font-size: 16px;}
+a{ color: #5e5c7f;}
 
 .color_1{ background-color: #ffd15c;}
 .color_2{ background-color: #ff4c60;}
@@ -52,9 +53,10 @@ p{ color: #5e5c7f; font-family: "Rubik",Sans-serif; font-size: 16px;}
     &:hover{
       background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
       border: 2px solid #854fee;
-      color: #222222;
+      color: #222222 !important;
       box-shadow: none;
     }
+    &:active,&:focus{ color: #fff;}
 
 }
 
@@ -69,6 +71,10 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
   &::after{
     right: auto; left: 0; bottom: 0; top: auto;
   }
+
+  .row{ display: flex; flex-wrap: wrap; }
+  .white_box{ height: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; }
+  .service_thum{height: 100%;}
 
 }
 
@@ -89,6 +95,15 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
   }
 }
 
+.white_box{ position: relative;
+  box-shadow: 0px 5px 20px 0px rgba(69,67,96,.1);
+  transition: all .3s ease-in-out;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+}
+
 .form-control{
     display: block;
     border-radius: 30px;
@@ -105,6 +120,10 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
     box-shadow: 0px 5px 20px 0px rgba(69,67,96,.1);
 }
 .form-group{ margin-bottom: 30px;}
+
+/* Custom Class End */
+
+/* Home Section Start */
 
 .detail_box{ display: flex; align-items: center; height: calc(100vh - 150px);}
 .my_detail{ width: 80%;}
@@ -138,11 +157,11 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
 }
 
 
+/* Home Section End */
+
 
 /* Experience Part Start */
 #experience{
-  .row{ display: flex; }
-  .white_box{ height: 100%; display: flex; align-items: center; justify-content: center;}
   img{ max-width: 400px;}
 }
 .timeline{ position: relative;
@@ -200,7 +219,7 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
 
 }
 
-.filter .white_box{ padding: 10px; border-radius: 10px; margin-bottom: 20px;}
+.filter .white_box{ padding: 10px; border-radius: 10px; margin-bottom: 20px; display: block; height: auto;}
 
 
 /* Footer Part Start */
@@ -216,6 +235,9 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
   .shape_1{top: 18px;}
   section{ padding-top: 70px;
     &#home{ display: flex; flex-wrap: wrap; align-items: center;}
+    .row{ display: block; }
+    .white_box{ display: block; margin-bottom: 20px;}
+    .service_thum{ padding: 30px 20px;}
   }
   .section-title{ margin-bottom:30px;}
 
@@ -232,8 +254,6 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
   .portfolio-filter li{ font-size: 15px; }
 
   #experience{
-    .row{ display: block; }
-    .white_box{ display: block; margin-bottom: 20px;}
     img{ max-width: 100%;}
   }
 
