@@ -849,6 +849,7 @@ section .service_thum {
   position: relative;
   background-color: inherit;
   width: 100%;
+  z-index: 1;
 }
 
 .timeline li .time {

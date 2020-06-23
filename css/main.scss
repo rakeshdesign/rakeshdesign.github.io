@@ -171,6 +171,7 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
       position: relative;
       background-color: inherit;
       width: 100%;
+      z-index: 1;
       .time { color: #8b88b1; font-size: 14px;}
       h3{font-size: 18px;margin: 5px 0;
         span{
