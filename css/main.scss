@@ -259,6 +259,7 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
   }
 
   .timeline li{padding-left: 30px;
+    h3 span{ display: block; margin-left: 0; margin-top: 5px;}
     i{font-size: 22px;}
   }
   #contact{ 

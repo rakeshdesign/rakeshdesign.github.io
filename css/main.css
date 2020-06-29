@@ -230,6 +230,26 @@ Min-resolution: 320px;
           box-shadow: none;
   -webkit-transition: width .6s ease;
   transition: width .6s ease;
+  -webkit-animation: progress 1.5s ease-in-out forwards;
+          animation: progress 1.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .counter_section {
@@ -287,11 +307,13 @@ Min-resolution: 320px;
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(104, 103, 127, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(104, 103, 127, 0.1);
 }
 
 .service_thum:hover {
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.2);
+          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.2);
 }
 
 .service_thum p {
@@ -1016,6 +1038,11 @@ section .service_thum {
   }
   .timeline li {
     padding-left: 30px;
+  }
+  .timeline li h3 span {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
   }
   .timeline li i {
     font-size: 22px;
