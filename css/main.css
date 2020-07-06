@@ -1014,6 +1014,7 @@ section .service_thum {
             transform: none;
     width: 100%;
     top: 0;
+    display: inline-block;
   }
   .hero-img {
     -webkit-box-shadow: 5px 5px 10px #c4c8ff;

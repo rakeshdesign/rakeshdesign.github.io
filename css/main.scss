@@ -246,7 +246,7 @@ section{ min-height: 100vh; padding-top: 100px; padding-bottom: 50px; position: 
     position: relative;transform: none; margin: 50px auto 40px;
     width: 50%; max-width: 170px; height: auto;
   }
-  .hero-img-block{ position: relative; transform: none; width: 100%; top: 0;}
+  .hero-img-block{ position: relative; transform: none; width: 100%; top: 0; display: inline-block;}
   .hero-img{ box-shadow: 5px 5px 10px #c4c8ff;}
   .hero-img-backdrop{ left: -30px; bottom: -45px;}
   .my_detail{ width: 100%; text-align: center;}
